@@ -1,17 +1,18 @@
 {
   "name": "react-newbie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "easy to use react components",
   "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
+    "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OzoneTank/react-newbie.git"
+    "url": "https://github.com/OzoneTank/react-newbie.git"
   },
   "keywords": [
     "react",
@@ -20,10 +21,8 @@
   ],
   "author": "OzoneTank <thearcadetron@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/OzoneTank/react-newbie/issues"
-  },
-  "homepage": "https://github.com/OzoneTank/react-newbie#readme",
+  "bugs": "https://github.com/OzoneTank/react-newbie/issues",
+  "homepage": "https://github.com/OzoneTank/react-newbie",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
