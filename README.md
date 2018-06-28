@@ -25,3 +25,29 @@ Easy components for building react apps
       <Else>this will show up</Then>
     </If>
 
+### Input
+    import { Input } from 'react-newbie';
+
+    <Input type="checkbox" valueName="checked" parent={this} />
+    <div>{'checked:' + this.state.checked}</div>
+
+    <Input type="text" valueName="message" parent={this} />
+    <div>{'message:' + this.state.message}</div>
+
+### Switch
+    import { Switch, Case, Break, Default } from 'react-newbie';
+
+    <Switch expression={this.state.foo}>
+      <Case value="a"/>
+      <div>it was a</div>
+      <Break />
+      <Case value="b" />
+      <div>it was b</div>
+      <Case value="c" />
+      <div>it was c</div>
+      <Break />
+      <Default />
+      <div>it was none of those</div>
+      <Break/>
+    </Switch>
+

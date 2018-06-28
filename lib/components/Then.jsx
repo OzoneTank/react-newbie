@@ -1,16 +1,13 @@
 import React from 'react';
 
-class Then extends React.Component {
-  render() {
-    const { children } = this.props;
-    if (children) {
-      if (children.type) {
-        return children;
-      }
-      return (<div>{children}</div>);
+const Then = ({ children }) => {
+  if (children) {
+    if (children.type) {
+      return children;
     }
-    return null;
+    return (<div>{children}</div>);
   }
+  return null;
 };
 
 export default Then;

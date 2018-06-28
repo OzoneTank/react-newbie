@@ -1,6 +1,6 @@
 {
   "name": "react-newbie",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "easy to use react components",
   "main": "build/index.js",
   "scripts": {
